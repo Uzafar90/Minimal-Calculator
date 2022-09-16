@@ -45,12 +45,10 @@ function removeNum(name = '') {
 	dp2 = dp2 + ' ' + name + ' ';
 }
 
-// declaring function to perform the math calculation (math functionality will be here)
-// Calling parseFloat(dp2) will only collect the first value and clears anything after that is whitespace.
-// Creating a new array that will hold the two values and then calling the split function can split dp2
+// declaring function to perform the math calculation
 function mathCalculation() {
-	const valuesInput = dp2.split(' '); //splitting the two numbers with the delimiter being ' ' *whitespace*
-	valuesInput[0] + ' ' + valuesInput[2]; //value[0] will be the first value, and value[2] will be the second value, value[1] being the expression only on for debug to show the values, can be removed
+	const valuesInput = dp2.split(' '); 
+	valuesInput[0] + ' ' + valuesInput[2]; 
 	if (dp1 === '×') {
 		result = parseFloat(valuesInput[0]) * parseFloat(valuesInput[2]);
 	} else if (dp1 === '÷') {
